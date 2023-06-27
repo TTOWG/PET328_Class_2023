@@ -18,7 +18,7 @@ gas_gravity = float(gas_gravity)
 # to switch the logical operator as requested:
 # to switch the logical operator as requested:
     # change the '>' to '<=', 1 mark
-    # change the 'or' to 'and' 0.5 mark
+    # change the 'or' to 'and' 1 mark
     # negate the entire condition using the 'not' operator 1 mark
 if not(co2_comp <= 0.12 and n2_comp <= 0.03 and h2s_comp <= 0):
     gas_gravity = (gas_gravity - (1.1767*h2s_comp) - \
