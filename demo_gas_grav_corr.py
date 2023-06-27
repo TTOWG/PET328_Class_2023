@@ -15,7 +15,6 @@ h2o_comp = float(h2o_comp)
 gas_gravity = float(gas_gravity)
 
 # the if statement
-
 if co2_comp > 0.12 or n2_comp > 0.03 or h2s_comp > 0:
     gas_gravity = (gas_gravity - (1.1767*h2s_comp) - \
                       (1.5196*co2_comp) - (0.9672*n2_comp) - \
@@ -32,5 +31,5 @@ t_pch = 169.2 + (349.5*gas_gravity) - (74.0*gas_gravity**2)
 
 # displaying the results.
 print('The hydrocarbon pseudo-critical pressure is {0:.2f} psia'.format(p_pch))
-print('The hydrocarbon pseudo-critical temperature is {0:.2f} deg Rankine'.format(p_pch))
+print('The hydrocarbon pseudo-critical temperature is {0:.2f} deg Rankine'.format(t_pch))
  
